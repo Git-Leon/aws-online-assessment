@@ -1,11 +1,8 @@
 package com.github.git_leon.onlineassessment;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.util.*;
 
-class Solution { // moving to do debugging on local IDE
+class Result1 { // moving to do debugging on local IDE
     class Pair<K,V> {
         private K key;
         private V value;
@@ -25,11 +22,11 @@ class Solution { // moving to do debugging on local IDE
 
     private List<Integer> arr;
 
-    public Solution(Integer... arr) {
+    public Result1(Integer... arr) {
         this(Arrays.asList(arr));
     }
 
-    public Solution(List<Integer> arr) {
+    public Result1(List<Integer> arr) {
         this.arr = arr;
     }
 
@@ -39,6 +36,7 @@ class Solution { // moving to do debugging on local IDE
             sets.add(new ArrayList<>());
             return sets;
         }
+        list = this.arr;
         Integer head = list.get(0);
         List<Integer> tail =list.subList(1, list.size());
         for(List<Integer> permutationOfTail :  getAllPermutations(tail)) {
@@ -102,7 +100,7 @@ class Solution { // moving to do debugging on local IDE
      */
 
     public static int splitIntoTwo(List<Integer> arr) {
-        return new Solution(arr).solve();
+        return new Result1(arr).solve();
     }
 
 }
