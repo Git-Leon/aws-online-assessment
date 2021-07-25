@@ -4,13 +4,13 @@ import java.util.List;
 
 
 
-class Result {
+class Result2 {
     // migrating to local IDE
     List<Integer> consecutiveDifference;
     int lowerBound;
     int upperBound;
 
-    public Result(List<Integer> consecutiveDifference, int lowerBound, int upperBound){
+    public Result2(List<Integer> consecutiveDifference, int lowerBound, int upperBound){
         this.consecutiveDifference = consecutiveDifference;
         this.lowerBound = lowerBound;
         this.upperBound = upperBound;
@@ -30,7 +30,7 @@ class Result {
      */
 
     public static int countAnalogousArrays(List<Integer> consecutiveDifference, int lowerBound, int upperBound) {
-        return new Result(consecutiveDifference, lowerBound, upperBound).solve();
+        return new Result2(consecutiveDifference, lowerBound, upperBound).solve();
     }
 
 }
