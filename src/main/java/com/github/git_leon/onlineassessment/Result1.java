@@ -36,7 +36,6 @@ class Result1 { // moving to do debugging on local IDE
             sets.add(new ArrayList<>());
             return sets;
         }
-        list = this.arr;
         Integer head = list.get(0);
         List<Integer> tail =list.subList(1, list.size());
         for(List<Integer> permutationOfTail :  getAllPermutations(tail)) {
