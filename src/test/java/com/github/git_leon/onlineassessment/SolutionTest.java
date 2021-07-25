@@ -7,12 +7,13 @@ public class SolutionTest {
     @Test
     public void test() {
         // given
-        Solution solution = new Solution();
+        Solution solution = new Solution(10,4,-8,7);
+        int expected = 3;
 
         // when
-        String actual = solution.toString();
+        int actual  = solution.solve();
 
         // then
-        Assert.assertNotNull(actual);
+        Assert.assertEquals(expected, actual);
     }
 }
